@@ -1,7 +1,7 @@
 [book]
 title = "学习 eBPF"
 language = "zh-CN"
-git-repository-url = "https://github.com/binw666/learning-ebpf-translation"
+
 # alerts 扩展支持
 [preprocessor.alerts]
 # 支持侧边目录
@@ -9,3 +9,5 @@ git-repository-url = "https://github.com/binw666/learning-ebpf-translation"
 [output.html]
 additional-css = ["theme/pagetoc.css"]
 additional-js  = ["theme/pagetoc.js"]
+git-repository-url = "https://github.com/binw666/learning-ebpf-translation"
+edit-url-template = "https://github.com/binw666/learning-ebpf-translation/edit/master/{path}"
