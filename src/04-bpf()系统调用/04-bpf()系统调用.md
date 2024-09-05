@@ -88,7 +88,7 @@ b["config"][ct.c_int(501)] = ct.create_string_buffer(b"Hi user 501!")
 以下是这个示例的一些输出说明，以及我在第二个终端中运行的命令：
 
 ```bash
-Terminal 1 									Terminal 2
+Terminal 1                                   Terminal 2
 $ ./hello-buffer-config.py
 37926 501 bash Hi user 501! 				ls
 37927 501 bash Hi user 501! 				sudo ls
@@ -560,7 +560,7 @@ next_key=0xaaaaf7a63960}, 24) = -1 ENOENT (No such file or directory)
 
 您还看到了一些 BTF 数据被加载到内核中，我提到 `bpftool` 使用这些信息来理解数据结构的格式，以便能够漂亮地打印它们。我还没有解释 BTF 数据的样子，或者它是如何用来使 eBPF 程序跨内核版本移植的。这些内容将在下一章中介绍。
 
-## 联系
+## 练习
 
 如果您想进一步探索 `bpf()` 系统调用，可以尝试以下几件事情：
 
