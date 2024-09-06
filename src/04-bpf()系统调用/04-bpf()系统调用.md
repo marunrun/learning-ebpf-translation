@@ -550,8 +550,6 @@ next_key=0xaaaaf7a63960}, 24) = -1 ENOENT (No such file or directory)
 
 您看到了一个示例，演示了如何使用 `BPF_MAP_UPDATE_ELEM` 从用户空间在映射中创建条目。还有类似的命令——`BPF_MAP_LOOKUP_ELEM` 和 `BPF_MAP_DELETE_ELEM` 用于从映射中检索和删除值。还有一个命令 `BPF_MAP_GET_NEXT_KEY`，用于查找映射中存在的下一个键。您可以使用它遍历所有有效条目。
 
-您看到了用户空间程序使用 **perf_event_open()** 和 **ioctl()** 将 eBPF 程序附加到 kprobe 事件的示例。对于其他类型的 eBPF 程序，附加方法可能非常不同，其中一些甚至使用 bpf() 系统调用。例如，有一个 **bpf(BPF_PROG_ATTACH)** 系统调用可用于附加 cgroup 程序，还有 **bpf(BPF_RAW_TRACEPOINT_OPEN)** 用于原始跟踪点（请参阅本章末尾的练习 5）。
-
 您看到了用户空间程序使用 `perf_event_open()` 和 `ioctl()` 将 eBPF 程序附加到 kprobe 事件的示例。对于其他类型的 eBPF 程序，附加方法可能非常不同，其中一些甚至使用 `bpf()` 系统调用。例如，有一个 `bpf(BPF_PROG_ATTACH)` 系统调用可以用来附加 cgroup 程序，而 `bpf(BPF_RAW_TRACEPOINT_OPEN)` 用于原始跟踪点（参见本章末尾的练习 5）。
 
 我还演示了如何使用 `BPF_MAP_GET_NEXT_ID`、`BPF_MAP_GET_FD_BY_ID` 和 `BPF_OBJ_GET_INFO_BY_FD` 来定位内核持有的映射（和其他）对象。
